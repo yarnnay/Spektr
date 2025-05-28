@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спектр</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content container">
+            <a href="#" class="header__logo logo">
+
+
+            </a>
+
+            <div class="header__right">
+                <nav class="header__nav">
+                    <a href="#features" class="nav-item" onclick="scrollToSection(event, 'features')">Об организации</a>
+                    <a href="#service" class="nav-item" onclick="scrollToSection(event, 'service')">Услуги</a>
+                    <a href="#service" class="nav-item" onclick="scrollToSection(event, 'steps')">Этапы работ</a>
+                    <a href="#service" class="nav-item" onclick="scrollToSection(event, 'documents')">Документация</a>
+                    <a href="#contact" class="nav-item" onclick="scrollToSection(event, 'contact')">Контакты</a>
+                </nav>
+
+
+                <button class="header__button button" href="#features" class="nav-item"
+                    onclick="scrollToSection(event, 'request')">ОСТАВИТЬ ЗАЯВКУ</button>
+
+                <div class="burger-menu" id="burger-menu">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <a href="#" class="header__logo logo mobile-nav-item"></a>
+            <div class="close-menu" id="close-menu"></div>
+        </div>
+        <div class="mobile-nav-wrapper">
+            <div class="mobile-nav-items">
+                <a href="#features" class="nav-item mobile-nav-item" onclick="scrollToSection(event, 'features')">Об
+                    организации</a>
+                <a href="#service" class="nav-item mobile-nav-item"
+                    onclick="scrollToSection(event, 'service')">Услуги</a>
+                <a href="#service" class="nav-item mobile-nav-item" onclick="scrollToSection(event, 'steps')">Этапы
+                    работ</a>
+                <a href="#service" class="nav-item mobile-nav-item"
+                    onclick="scrollToSection(event, 'documents')">Документация</a>
+                <a href="#contact" class="nav-item mobile-nav-item"
+                    onclick="scrollToSection(event, 'contact')">Контакты</a>
+            </div>
+            <a href="https://vk.com/spektr_nch" target="_blank" rel="noopener noreferrer" class="vk-button">
+                <div class="vk-icon">
+
+                </div>
+                <div class="vk-text">
+                    <p class="p--main">Мы ВКонтакте</p>
+                    <p class="p--main">Следите за новостями</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+
+    <section class="hero section">
+        <div class="hero__content container">
+
+            <div class="hero__location">
+                <div class="location-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 24C12 24 22.5 18.75 22.5 10.5C22.5 4.70101 17.799 0 12 0C6.20101 0 1.5 4.70101 1.5 10.5C1.5 18.75 12 24 12 24ZM12 13.5C13.6569 13.5 15 12.1569 15 10.5C15 8.84315 13.6569 7.5 12 7.5C10.3431 7.5 9 8.84315 9 10.5C9 12.1569 10.3431 13.5 12 13.5Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+
+                <h4 class="h--4">НАБЕРЕЖНЫЕ ЧЕЛНЫ И РЕСПУБЛИКА ТАТАРСТАН</h4>
+
+            </div>
+
+
+
+            <div class="hero__middle">
+                <h1 class="h--1">
+                    Надежные инженерные решения
+                </h1>
+
+            </div>
+
+
+
+
+            <div class="hero__buttons">
+                <button class="button button--outline">Ознакомиться с услугами</button>
+                <button class="button button--white">
+                    <span onclick="scrollToSection(event, 'request')" class="button-text">Получить консультацию</span>
+                </button>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="features " id="features">
+        <div class=" features__content container">
+            <div class="section-heading">
+                <h2 class="h--2">ЗДЕСЬ НАЙДЁТЕ КОМАНДУ, КОТОРАЯ РЕАЛИЗУЕТ ВАШ ПРОЕКТ ПОД КЛЮЧ</h2>
+                <h4 class="h--4">ОБ ОРГАНИЗАЦИИ</h4>
+            </div>
+
+
+            <div class="features__cards-wrapper">
+                <div class="card">
+                    <div class="icon-circle">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_729_549)">
+                                <path
+                                    d="M22.2087 2.00007C23.6535 1.99326 25.0694 2.40558 26.2847 3.18707C27.2966 3.83643 28.1509 4.70327 28.7855 5.72448C29.4201 6.74569 29.819 7.89557 29.9531 9.09039C30.0872 10.2852 29.9532 11.4949 29.5607 12.6314C29.1683 13.7679 28.5274 14.8025 27.6847 15.6601C26.5879 16.7674 25.1884 17.5261 23.662 17.841C22.1356 18.1559 20.5502 18.0129 19.1047 17.4301C17.6567 18.8851 15.8287 20.7191 15.5337 21.0141C15.338 21.2174 15.0698 21.335 14.7877 21.3411C14.7155 21.3412 14.6436 21.3321 14.5737 21.3141C14.4019 21.2697 14.2251 21.2475 14.0477 21.2481C13.6181 21.239 13.1989 21.3805 12.8627 21.6481C12.6944 21.7882 12.5588 21.9636 12.4656 22.1617C12.3723 22.3599 12.3235 22.5761 12.3227 22.7951C12.3245 22.9604 12.2936 23.1246 12.2318 23.278C12.1701 23.4314 12.0786 23.5711 11.9627 23.6891C11.8407 23.8133 11.6926 23.909 11.5292 23.9691C11.3658 24.0293 11.1911 24.0525 11.0177 24.0371C10.9417 24.0371 10.8607 24.0371 10.7727 24.0291H10.7487C10.5094 24.069 10.2845 24.1702 10.096 24.3228C9.9074 24.4755 9.76158 24.6743 9.67268 24.9001C9.52841 25.3199 9.51793 25.7741 9.64268 26.2001C9.68865 26.3595 9.69255 26.5281 9.65399 26.6895C9.61544 26.8509 9.53575 26.9996 9.42268 27.1211C8.66168 27.8611 7.46168 29.0711 7.46168 29.0711C7.10189 29.4291 6.66225 29.6966 6.17892 29.8516C5.69559 30.0066 5.18237 30.0447 4.68146 29.9627C4.18055 29.8807 3.70626 29.6809 3.29759 29.3799C2.88891 29.0789 2.55753 28.6851 2.33068 28.2311C2.03562 27.6137 1.94251 26.919 2.06458 26.2457C2.18664 25.5724 2.51767 24.9546 3.01068 24.4801L14.6147 12.8581C14.5107 12.6061 14.4157 12.3444 14.3297 12.0731C13.9328 10.76 13.9013 9.36359 14.2388 8.034C14.5762 6.70441 15.2697 5.49196 16.2447 4.52707C17.024 3.73471 17.9519 3.1037 18.9752 2.67011C19.9986 2.23651 21.0973 2.00883 22.2087 2.00007ZM25.1917 9.01007C25.4336 9.01003 25.6731 8.96192 25.8963 8.86853C26.1194 8.77514 26.3218 8.63834 26.4917 8.46607C26.8364 8.11333 27.0293 7.63974 27.0293 7.14657C27.0293 6.65339 26.8364 6.1798 26.4917 5.82707C26.3206 5.6547 26.117 5.51789 25.8928 5.42454C25.6686 5.33118 25.4281 5.28312 25.1852 5.28312C24.9423 5.28312 24.7018 5.33118 24.4776 5.42454C24.2533 5.51789 24.0498 5.6547 23.8787 5.82707C23.5335 6.17955 23.3402 6.65324 23.3402 7.14657C23.3402 7.63989 23.5335 8.11358 23.8787 8.46607C24.0505 8.63846 24.2547 8.77526 24.4795 8.86861C24.7043 8.96196 24.9453 9.01003 25.1887 9.01007H25.1917ZM22.2087 6.62963e-05C19.4304 0.0194789 16.7735 1.14178 14.8227 3.12007C13.6319 4.29831 12.7736 5.77024 12.3346 7.38685C11.8956 9.00346 11.8915 10.7074 12.3227 12.3261L1.59168 23.0611C0.802259 23.8376 0.276834 24.8425 0.089673 25.9339C-0.0974881 27.0253 0.0630803 28.1479 0.548683 29.1431C0.919938 29.8768 1.45967 30.5122 2.1237 30.9973C2.78773 31.4824 3.55719 31.8033 4.36909 31.9338C5.181 32.0643 6.01227 32.0007 6.79487 31.7482C7.57748 31.4957 8.28916 31.0615 8.87168 30.4811C8.88068 30.4721 10.0637 29.2811 10.8137 28.5491C11.1425 28.2167 11.3884 27.8116 11.5316 27.3665C11.6748 26.9214 11.7111 26.4488 11.6377 25.9871C12.306 25.8789 12.9222 25.5598 13.3961 25.0763C13.8701 24.5928 14.1769 23.9704 14.2717 23.3001C14.4406 23.3309 14.612 23.3463 14.7837 23.3461C15.5956 23.3377 16.3715 23.0101 16.9437 22.4341L19.6547 19.7141C20.4427 19.9124 21.2521 20.0131 22.0647 20.0141C23.3748 20.0168 24.6721 19.7574 25.8804 19.2509C27.0886 18.7444 28.1832 18.0012 29.0997 17.0651C30.1529 15.9963 30.9544 14.706 31.4457 13.2882C31.937 11.8704 32.1057 10.3609 31.9396 8.86961C31.7734 7.37833 31.2766 5.94291 30.4854 4.668C29.6941 3.39309 28.6283 2.31081 27.3657 1.50007C25.8269 0.514085 24.0362 -0.00676247 22.2087 6.62963e-05Z"
+                                    fill="#0760D9" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_729_549">
+                                    <rect width="32" height="32" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="card__description">
+                        <h3 class="h--3">ОТ ПРОЕКТА <br> ДО ЗАПУСКА</h2>
+                        <p class="p--main">Газификация "под ключ" частных домов, коммунально-бытовых и промышленных
+                            объектов</p>
+                    </div>
+
+
+
+                </div>
+
+                <div class="card">
+                    <div class="icon-circle">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.09364 30.9686H20.5126C27.7166 30.9686 30.9996 25.6816 30.9996 20.7686C30.9452 19.6166 30.6563 18.4878 30.1506 17.4514C29.6449 16.4149 28.9331 15.4925 28.0586 14.7406C26.2598 13.0269 23.8855 12.0472 21.4016 11.9936C19.7425 12.085 18.1329 12.5913 16.7202 13.466C15.3075 14.3408 14.1369 15.5561 13.3156 17.0006C12.7556 15.8856 11.9456 14.2686 11.2996 12.9686H13.4176C14.0445 12.9292 14.64 12.6802 15.1083 12.2616C15.5766 11.843 15.8905 11.2791 15.9996 10.6606C16.3918 10.3327 16.7039 9.91953 16.9121 9.45263C17.1202 8.98573 17.2189 8.47743 17.2006 7.96657C17.2006 4.30457 13.1036 2.46656 10.8266 2.46656C7.71737 2.39364 6.81471 4.65163 6.00721 6.67159L5.97164 6.76057C5.46864 8.05457 1.05964 19.5046 1.05964 22.9816C1.05105 25.1055 1.87702 27.1478 3.35964 28.6686C4.10979 29.4203 5.00486 30.0118 5.99053 30.4072C6.9762 30.8026 8.03192 30.9935 9.09364 30.9686ZM7.83464 7.49757C8.70764 5.31257 9.19164 4.46856 10.7406 4.46856H10.8086C12.2996 4.46856 15.1996 5.70356 15.1996 7.96856C15.2266 8.19622 15.1915 8.42692 15.098 8.63623L15.0974 8.63755C15.0735 8.60671 15.0493 8.577 15.0248 8.54849C14.9069 8.41094 14.7758 8.29166 14.6402 8.20278C14.518 8.1227 14.337 8.03076 14.1296 8.03076H13.5985C13.0804 7.37751 11.4892 6.21823 10.2496 6.43699L11.5465 8.08542H13.4006L13.6686 8.72421C14.0005 9.51525 13.8859 9.90778 13.7779 10.0793C13.6547 10.2751 13.4478 10.3397 13.3629 10.3397H7.0788L7.6969 11.1443C7.96808 11.4973 8.32773 11.7722 8.68075 11.9817C8.68272 12.1318 8.71847 12.2798 8.78564 12.4146C8.80703 12.4572 8.90794 12.6595 9.06264 12.9696L9.06333 12.971C9.64989 14.1468 11.0076 16.8686 11.7389 18.3202C11.7135 18.3562 11.689 18.3932 11.6655 18.4314L8.77299 23.1317C8.48354 23.6021 8.6302 24.218 9.10056 24.5075C9.57091 24.7969 10.1869 24.6502 10.4763 24.1799L13.0775 19.9529C13.1664 19.9737 13.2576 19.9851 13.3496 19.9866C13.451 19.9821 13.551 19.9663 13.648 19.9397L16.3323 24.3622C16.6189 24.8343 17.2339 24.9847 17.706 24.6981C18.1781 24.4116 18.3286 23.7965 18.042 23.3244L15.0785 18.4419C15.0354 18.3709 14.9889 18.3038 14.9393 18.2405C15.4861 17.1773 16.2704 16.249 17.236 15.5304C18.4474 14.6288 19.893 14.0952 21.3996 13.9936C23.3802 14.0446 25.2704 14.8335 26.6996 16.2056C27.3676 16.7746 27.9152 17.4714 28.3101 18.2549C28.7051 19.0385 28.9395 19.8931 28.9996 20.7686C28.9986 24.8506 26.3736 28.9686 20.5126 28.9686H9.09364C8.29776 28.9914 7.50552 28.8525 6.76487 28.5603C6.02422 28.2681 5.35056 27.8286 4.78464 27.2686C3.67231 26.1268 3.05347 24.5935 3.06164 22.9996C3.06164 20.3596 6.50964 10.9066 7.83464 7.49757Z"
+                                fill="#0760D9" />
+                        </svg>
+
+                    </div>
+                    <div class="card__description">
+                        <h3 class="h--3">НАДЁЖНАЯ <br> КОМАНДА</h2>
+                        <p class="p--main">Профессиональный опыт команды включает более 12 лет в управлении
+                            строительными проектами</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="icon-circle">
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.8189 27.3223C15.9402 27.3223 16.0796 27.292 16.2371 27.2315C16.3947 27.171 16.522 27.0924 16.6189 26.9956L28.8729 14.7278C29.1881 14.4132 29.4244 14.0563 29.5819 13.6571C29.7395 13.2578 29.8183 12.8525 29.8183 12.4412C29.8183 12.0298 29.7395 11.6184 29.5819 11.2071C29.4244 10.7958 29.1881 10.4328 28.8729 10.1183L22.3277 3.58511C22.0126 3.27055 21.649 3.03463 21.2369 2.87735C20.8248 2.72006 20.4127 2.64143 20.0006 2.64143C19.5885 2.64143 19.1824 2.72006 18.7824 2.87735C18.3825 3.03463 18.0249 3.27055 17.7098 3.58511L17.0552 4.23842L20.0006 7.21466C20.3157 7.55336 20.5945 7.94659 20.8369 8.39425C21.0793 8.84185 21.2005 9.33184 21.2005 9.86422C21.2005 10.7836 20.843 11.5943 20.1278 12.296C19.4127 12.9977 18.5946 13.3486 17.6734 13.3486C17.0674 13.3486 16.5644 13.2578 16.1644 13.0764C15.7644 12.8949 15.3947 12.6347 15.0553 12.296L12.4009 9.64644L5.8194 16.2159C5.69822 16.3368 5.61338 16.4639 5.56489 16.597C5.51641 16.7301 5.49217 16.8692 5.49217 17.0144C5.49217 17.3289 5.5952 17.589 5.80124 17.7948C6.00732 18.0004 6.26789 18.1033 6.583 18.1033C6.72845 18.1033 6.86786 18.067 7.00117 17.9944C7.13454 17.9218 7.24966 17.8371 7.3466 17.7403L11.601 13.4938C11.8191 13.276 12.0737 13.1671 12.3646 13.1671C12.6554 13.1671 12.91 13.276 13.1282 13.4938C13.3463 13.7115 13.4554 13.9656 13.4554 14.256C13.4554 14.5463 13.3463 14.8004 13.1282 15.0182L8.91017 19.2284C8.78901 19.3494 8.70414 19.4825 8.65563 19.6277C8.6072 19.7728 8.58291 19.918 8.58291 20.0632C8.58291 20.3536 8.692 20.6076 8.91017 20.8254C9.12834 21.0432 9.38287 21.1521 9.67377 21.1521C9.81922 21.1521 9.95863 21.1218 10.0919 21.0613C10.2253 21.0008 10.3404 20.9222 10.4374 20.8254L14.6917 16.5789C14.9099 16.3611 15.1644 16.2522 15.4553 16.2522C15.7462 16.2522 16.0007 16.3611 16.2189 16.5789C16.4371 16.7966 16.5462 17.0507 16.5462 17.3411C16.5462 17.6314 16.4371 17.8855 16.2189 18.1033L12.0009 22.3135C11.904 22.4103 11.8252 22.5373 11.7646 22.6946C11.704 22.8519 11.6737 23.0031 11.6737 23.1483C11.6737 23.4387 11.7828 23.6927 12.0009 23.9105C12.2191 24.1283 12.4736 24.2372 12.7645 24.2372C12.91 24.2372 13.0434 24.2129 13.1645 24.1646C13.2857 24.1162 13.407 24.0315 13.5281 23.9105L17.7825 19.664C18.0007 19.4462 18.2552 19.3373 18.5461 19.3373C18.837 19.3373 19.0915 19.4462 19.3097 19.664C19.5279 19.8817 19.6369 20.1358 19.6369 20.4262C19.6369 20.7165 19.5279 20.9706 19.3097 21.1884L15.0553 25.4349C14.9342 25.5559 14.8493 25.689 14.8008 25.8342C14.7524 25.9794 14.7281 26.1124 14.7281 26.2334C14.7281 26.5721 14.8251 26.8383 15.019 27.0319C15.2129 27.2254 15.4796 27.3223 15.8189 27.3223ZM15.8189 29.5C15.019 29.5 14.3039 29.2035 13.6736 28.6108C13.0434 28.0179 12.6676 27.286 12.5464 26.4149C11.7222 26.2939 11.0313 25.9551 10.4737 25.3986C9.91623 24.8421 9.57683 24.1525 9.4556 23.3298C8.63142 23.2088 7.94658 22.864 7.40115 22.2954C6.85572 21.7267 6.52243 21.0432 6.40119 20.2447C5.50429 20.1237 4.76493 19.7607 4.18314 19.1558C3.60135 18.5509 3.31045 17.8249 3.31045 16.9781C3.31045 16.5667 3.38923 16.1554 3.5468 15.7441C3.70437 15.3327 3.94073 14.9697 4.25586 14.6552L10.8737 8.04945C11.2858 7.63808 11.7949 7.43243 12.4009 7.43243C13.007 7.43243 13.5161 7.63808 13.9281 8.04945L16.4007 10.5175C16.5947 10.7111 16.8068 10.8623 17.0371 10.9712C17.2674 11.0801 17.4916 11.1346 17.7098 11.1346C18.0249 11.1346 18.3219 10.9954 18.6006 10.7172C18.8794 10.4388 19.0188 10.1425 19.0188 9.82792C19.0188 9.68274 18.9764 9.51941 18.8915 9.33793C18.8067 9.15646 18.6673 8.96888 18.4734 8.77536L13.2736 3.58511C12.9585 3.27055 12.5949 3.03463 12.1827 2.87735C11.7707 2.72006 11.3586 2.64143 10.9464 2.64143C10.5344 2.64143 10.1283 2.72006 9.72831 2.87735C9.32833 3.03463 8.97082 3.27055 8.65563 3.58511L3.12864 9.10201C2.64381 9.5859 2.34686 10.1727 2.23777 10.8623C2.12869 11.5519 2.20747 12.2113 2.47413 12.8404C2.59534 13.1066 2.59534 13.3788 2.47413 13.6571C2.35292 13.9353 2.15899 14.1349 1.89234 14.256C1.62568 14.3769 1.34691 14.3769 1.05601 14.256C0.765115 14.1349 0.559067 13.9413 0.437858 13.6752C0.0257533 12.5864 -0.0954483 11.5035 0.0742383 10.4268C0.243925 9.34998 0.752992 8.38816 1.60144 7.54131L7.09207 2.0607C7.62543 1.52837 8.23144 1.13517 8.91017 0.881101C9.58897 0.627034 10.2798 0.5 10.9828 0.5C11.6858 0.5 12.3707 0.627034 13.0372 0.881101C13.7039 1.13517 14.3039 1.52837 14.8372 2.0607L15.4917 2.71402L16.1462 2.0607C16.6796 1.52837 17.2856 1.13517 17.9643 0.881101C18.6431 0.627034 19.334 0.5 20.0369 0.5C20.7399 0.5 21.4248 0.627034 22.0914 0.881101C22.758 1.13517 23.358 1.52837 23.8913 2.0607L30.4001 8.55758C30.9334 9.08989 31.3334 9.69479 31.6 10.3724C31.8667 11.0498 32 11.7395 32 12.4412C32 13.1428 31.8667 13.8264 31.6 14.4919C31.3334 15.1572 30.9334 15.7561 30.4001 16.2885L18.1461 28.52C17.831 28.8346 17.4734 29.0765 17.0734 29.2459C16.6734 29.4153 16.2553 29.5 15.8189 29.5Z"
+                                fill="#0760D9" />
+                        </svg>
+                    </div>
+                    <div class="card__description">
+
+
+                        <h3 class="h--3">ОТ ЧАСТНОГО К ОБЩЕСТВЕННОМУ</h2>
+                        <p class="p--main">Частные дома → школы и детсады → многоквартирные комплексы. Доверие к
+                            нам обеспечило стабильный рост.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+    <section class="credit">
+        <div class="credit__content container">
+            <h4 class="h--4">Аккредитованный подрядчик <br>
+                ООО «Газпром трансгаз Казань»</h4>
+            <h2 class="h--2">Официальное выполнение работ <br> с соблюдением всех <br> нормативных требований
+            </h2>
+            <a href="https://kazan-tr.gazprom.ru/" target="_blank" rel="noopener noreferrer">
+                <img class="gazprom-logo" src="images/gazprom-logo.png" alt="ООО «Газпром трансгаз Казань» ">
+            </a>
+        </div>
+    </section>
+
+
+    <section class="chief">
+        <div class="chief__content container">
+            <div class="chief__quote">
+                <h2 class="h--2">
+                    Всё начается <br> с желания <br> делать лучше!
+                </h2>
+
+                <div class="chief__info">
+                    <p class="p--main chief__name">Алимов Ильнур Гильманович</p>
+                    <p class="p--main">Основатель ООО “Спектр”</p>
+                </div>
+            </div>
+
+            <div class="tags__wrapper">
+                <div class="tag">Реализовал десятки объектов</div>
+                <div class="tag">12 лет опыта в инженерной сфере</div>
+                <div class="tag">Руководит всеми ключевыми процессами в компании</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats__content container">
+            <div class="stats__top">
+                <div class="section-heading">
+                    <h2 class="h--2">Построили как для себя</h2>
+                    <h4 class="h--4">Показатели 2024 года</h4>
+                </div>
+                <div class="section-info">
+                    <p class="p--main">
+                        Мы не стремимся к количеству — для нас важнее качество. Строим так, как построили бы для
+                        себя: надёжно, честно и с уважением к каждому клиенту. Поэтому нам доверяют и рекомендуют.
+                    </p>
+                </div>
+            </div>
+
+            <div class="stats__wrapper">
+                <div class="card__description">
+
+
+                    <h2 class="h--2">>200</h2>
+                    <p class="p--main">Газифицировано более 200 объектов, включая дома, соц учреждения и
+                        предприятия малого и среднего бизнеса</p>
+                </div>
+
+                <div class="card__description">
+
+
+                    <h2 class="h--2">>6000</h2>
+                    <p class="p--main">Проложено более 6000 метров подземного газопровода, обеспечив стабильную
+                        подачу газа в дома и на предприятия</p>
+                </div>
+
+                <div class="card__description">
+
+
+                    <h2 class="h--2">>15</h2>
+                    <p class="p--main">Построено свыше 15 км подземных водопроводов с износостойкими трубами для
+                        надёжной эксплуатации</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service" id="service">
+        <div class="service__content container">
+            <div class="section-heading">
+                <h2 class="h--2">Газ и вода там,<br> где вы захотите</h2>
+                <h4 class="h--4">Спектр услуг</h4>
+            </div>
+
+
+            <div class="service__wrapper">
+                <div class="card service__card">
+                    <div class="card__description">
+                        <h3 class="h--3">Газификация объектов</h2>
+                        <p class="p--main">Проведение газификации частных и промышленных объектов, включая по программе
+                            Догазификации.</p>
+                    </div>
+                    <div class="service__details">
+                        <h4 class="h--4"> от 1 до 4 недель </h4>
+                        <div class="service__price h--4">от 68000</div>
+                    </div>
+                </div>
+
+                <div class="card service__card">
+                    <div class="card__description">
+                        <h3 class="h--3">Водоснабжение объектов</h2>
+                        <p class="p--main">Строительство и капитальный ремонт систем водоснабжения для домов и
+                            предприятий.</p>
+                    </div>
+                    <div class="service__details">
+                        <h4 class="h--4"> от 1 до 4 недель </h4>
+                        <div class="service__price h--4">от 40000</div>
+                    </div>
+                </div>
+
+                <div class="card service__card">
+                    <div class="card__description">
+                        <h3 class="h--3">Проектирование инженерных систем</h2>
+                        <p class="p--main">Разработка проектов газо- и водоснабжения.</p>
+                    </div>
+                    <div class="service__details">
+                        <h4 class="h--4"> от 1 до 4 недель </h4>
+                        <div class="service__price h--4">от 4500</div>
+                    </div>
+                </div>
+
+                <div class="card service__card hidden">
+                    <div class="card__description">
+                        <h3 class="h--3">Подача заявки на ТУ</h2>
+                        <p class="p--main">Подготовка документов и сопровождение заявки на ТУ от ООО «Газпром Трансгаз
+                            Казань» до получения ТУ.</p>
+                    </div>
+                    <div class="service__details">
+                        <h4 class="h--4"> от 1 до 4 недель </h4>
+                        <div class="service__price h--4">от 5000</div>
+                    </div>
+                </div>
+
+                <div class="card service__card hidden">
+                    <div class="card__description">
+                        <h3 class="h--3">РПТиТ</h2>
+                        <p class="p--main">Составление расчета потребности в тепле и топливе.</p>
+                    </div>
+                    <div class="service__details">
+                        <h4 class="h--4"> от 1 до 4 недель </h4>
+                        <div class="service__price h--4">от 15000</div>
+                    </div>
+                </div>
+
+                <div class="card service__card hidden">
+                    <div class="card__description">
+                        <h3 class="h--3">Акт ВДПО</h2>
+                        <p class="p--main">Проверка систем и оформление акта дымовых и вентиляционных каналов.</p>
+                    </div>
+                    <div class="service__details">
+                        <h4 class="h--4"> от 1 до 4 недель </h4>
+                        <div class="service__price h--4">от 2000</div>
+                    </div>
+                </div>
+
+                <div class="card service__card hidden">
+                    <div class="card__description">
+                        <h3 class="h--3">Согласование узла учета газа</h2>
+                        <p class="p--main">Согласование узла учета газа в АО «Газпром межрегионгаз Казань».</p>
+                    </div>
+                    <div class="service__details">
+                        <h4 class="h--4"> от 1 до 4 недель </h4>
+                        <div class="service__price h--4">от 15000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="service__more">
+                <button class="button">
+                    <span class="button-text">Все услуги</span>
+                    <span class="arrow--icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 10L19 10M19 10L10 0.999999M19 10L10 19" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </span>
+                </button>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <section class="steps" id="steps">
+        <div class="steps__content container">
+
+            <div class="section-heading">
+                <h2 class="h--2">От первого звонка <br> до теплого дома</h2>
+                <h4 class="h--4">Этапы работ</h4>
+            </div>
+
+            <div class="step">
+                <div class="step-header">
+
+                    <div class="step-content">
+                        <h3 class="step-title h--3">Консультация <br> клиента</h3>
+                    </div>
+                    <div class="step-arrow">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M19 12l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="h--3 step-number">01</div>
+                </div>
+                <div class="step-details">
+
+                    <div class="step__cards-wrapper">
+                        <div class="card">
+
+                            <div class="card__description">
+                                <h3 class="h--3">Бесплатная <br> консультация</h2>
+                                <p class="p--main"> Выезд специалиста на объект для консультации по газоснабжению и
+                                    проведения замеров внутри участка
+                                </p>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="card">
+
+                            <div class="card__description">
+                                <h3 class="h--3">Разметка <br> маршрута</h2>
+                                <p class="p--main">
+                                    При разработке маршрута газопровода за пределами участка учитываются особенности
+                                    ландшафта и технические условия для обеспечения безопасности и надежности трассы
+
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+
+                            <div class="card__description">
+
+
+                                <h3 class="h--3">Помощь <br> с документами</h2>
+
+
+
+                                <p class="p--main">
+                                    Обсуждая способы подачи заявки на Договор и Технические условия, мы предлагаем
+                                    возможность полностью передать всю задачу нашей команде для полного сопровождения
+                                    процесса</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-header">
+
+                    <div class="step-content">
+                        <h3 class="step-title h--3">Заключение <br> договора</h3>
+                    </div>
+                    <div class="step-arrow">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M19 12l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="h--3 step-number">02</div>
+                </div>
+                <div class="step-details">
+                    <div class="step__cards-wrapper">
+                        <div class="card">
+
+                            <div class="card__description">
+                                <h2 class="h--3">Утверждаем <br> смету</h2>
+                                <p class="p--main"> Подробно согласуем объем работ, обсуждаем используемые материалы и
+                                    сроки, а также уточняем стоимость для полного понимания клиентом структуры затрат
+                                </p>
+
+
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="card">
+
+                            <div class="card__description">
+                                <h3 class="h--3">Заключаем <br> договор подряда</h2>
+                                <p class="p--main">
+                                    Подписываем юридически обязывающий договор, в котором прописываем все обязательства
+                                    сторон, а также фиксируем этапы выполнения работ, гарантии и сроки </p>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-header">
+
+                    <div class="step-content">
+                        <h3 class="step-title h--3">Организация <br> подачи газа</h3>
+                    </div>
+                    <div class="step-arrow">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M19 12l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="h--3 step-number">03</div>
+                </div>
+                <div class="step-details">
+                    <div class="step__cards-wrapper">
+                        <div class="card">
+                            <div class="card__description">
+                                <h3 class="h--3">Подача <br> заявки</h2>
+                                <p class="p--main">Подготавливаем и подаём заявку в газораспределительную организацию.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__description">
+                                <h3 class="h--3">Проектирование <br> и согласование</h2>
+                                <p class="p--main">Разрабатываем проект газоснабжения и получаем его утверждение.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__description">
+                                <h3 class="h--3">Монтаж <br> сетей</h2>
+                                <p class="p--main">Осуществляем работы строго по согласованному проекту.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__description">
+                                <h3 class="h--3">Согласование <br> документации</h2>
+                                <p class="p--main">Готовим и утверждаем все необходимые технические документы.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__description">
+                                <h3 class="h--3">Приемка <br> объекта</h2>
+                                <p class="p--main">Обеспечиваем участие в приёмке представителями надзорных органов.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__description">
+                                <h3 class="h--3">Оформление <br> договора</h2>
+                                <p class="p--main">Помогаем клиенту оформить договор с поставщиком.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__description">
+                                <h3 class="h--3">Пуск <br> газа</h2>
+                                <p class="p--main">Организуем подключение и пуск газа силами газораспределительной
+                                    организации.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="documents" id="documents">
+        <div class="documents__content container">
+            <div class="section-heading">
+                <h2 class="h--2">Всё официально</h2>
+                <h4 class="h--4">Документация</h4>
+            </div>
+
+
+            <div class="certificates__wrapper">
+                <!-- Certificate 1 -->
+                <div class="certificate__card" style="background-image: url('images/cert1.jpg')" onclick="openModal(1)">
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="certificate__card" style="background-image: url('images/cert2.jpg')" onclick="openModal(2)">
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="certificate__card" style="background-image: url('images/cert3.jpg')" onclick="openModal(3)">
+                </div>
+
+                <!-- Certificate 4 -->
+                <div class="certificate__card" style="background-image: url('images/cert4.jpg')" onclick="openModal(4)">
+                </div>
+
+                <!-- Certificate 5 -->
+                <div class="certificate__card" style="background-image: url('images/cert5.jpg')" onclick="openModal(5)">
+                </div>
+
+
+            </div>
+
+            <!-- Modal -->
+            <div id="modal" class="modal" onclick="closeModal(event)">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <span class="close" onclick="closeModal()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.1212 12L24 2.12115L21.8788 0L12 9.87885L2.12145 0L0 2.12115L9.87885 12L0 21.8788L2.12145 24L12 14.1212L21.8788 24L24 21.8788L14.1212 12Z"
+                                fill="currentColor" />
+                        </svg>
+
+
+                    </span>
+                    <div id="modalContent">
+
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+
+    <section class="request" id="request">
+        <div class="request__content container">
+            <div class="section-heading">
+                <h2 class="h--2">Обсудить детали и стоимость</h2>
+                <h4 class="h--4">Оставить заявку</h4>
+            </div>
+            <div class="request__form">
+                <div class="request__info">
+                    <p class="p--main">
+                        Наш специалист свяжется с вами, чтобы ответить на вопросы и предложит оптимальное решение.
+                    </p>
+                    <div class="tags__wrapper">
+                        <div class="tag">Быстрая поддержка</div>
+                        <div class="tag">Индивидуальный подход</div>
+                        <div class="tag">Прозрачное ценообразование</div>
+                    </div>
+                </div>
+
+                <form class="form">
+                    <div class="form__item">
+                        <input type="text" placeholder="Иванов Иван Иванович">
+                    </div>
+
+                    <div class="form__item">
+                        <input type="tel" placeholder="+7 (999) 99 - 99 - 99">
+                    </div>
+                    <div class="form__item">
+                        <input type="text" placeholder="@ivanov99">
+                    </div>
+
+
+
+                    <div class="form__submit">
+
+                        <button class="button">
+                            <span class="button-text">Оставить заявку</span>
+                            <span class="arrow--icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 10L19 10M19 10L10 0.999999M19 10L10 19" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                        </button>
+
+                        <div class="p--main">Нажимая на кнопку, я соглашаюсь на <br> <a class="p--main" href="#">
+                                обработку персональных
+                                данных</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="contact" id="contact">
+        <div class="contact__content container">
+
+            <div class="section-heading">
+                <h2 class="h--2">Наши двери открыты</h2>
+                <h4 class="h--4">Контакты</h4>
+
+            </div>
+
+            <div class="contact__wrapper">
+                <div class="map__wrapper">
+                    <div id="map"></div>
+                </div>
+
+                <div class="contact__info">
+                    <div class="contact-item">
+                        <h4 class="h--4">АДРЕС</h4>
+                        <p class="p--main">РТ, г. Набережные Челны, бульвар Павла Корчагина, 2а (ГЭС, 10/34а), этаж
+                            2, офис
+                            №201
+                        </p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4 class="h--4">РЕКВИЗИТЫ</h4>
+                        <p class="p--main">ИНН 1650399338, КПП 165001001, <br> ОГРН 1211600011204, ОКПО
+                            47184361</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4 class="h--4">ТЕЛЕФОН</h4>
+                        <a href="tel:+78552253002">+7 (8552) 25-30-02</a>
+                        <a href="tel:+79053739349">+7 (905) 373-93-49</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4 class="h--4">ПОЧТА</h4>
+                        <a href="mailto:ooospektr21@mail.ru">ooospektr21@mail.ru</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer__content container">
+            <nav class="footer__nav">
+                <a href="#" class="footer__logo logo"></a>
+                <a href="#features" class="nav-item" onclick="scrollToSection(event, 'features')">Об организации</a>
+                <a href="#service" class="nav-item" onclick="scrollToSection(event, 'service')">Услуги</a>
+                <a href="#service" class="nav-item" onclick="scrollToSection(event, 'steps')">Этапы работ</a>
+                <a href="#service" class="nav-item" onclick="scrollToSection(event, 'documents')">Документация</a>
+
+                <a href="#" class="nav-item" onclick="scrollToSection(event, 'contact')">Контакты</a>
+            </nav>
+
+            <a href="https://vk.com/spektr_nch" target="_blank" rel="noopener noreferrer" class="vk-button">
+                <div class="vk-icon">
+
+                </div>
+                <div class="vk-text">
+                    <p class="p--main">Мы ВКонтакте</p>
+                    <p class="p--main">Следите за новостями</p>
+                </div>
+            </a>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        // бургер
+        // Исправленная функция для плавного скролла
+        function scrollToSection(event, sectionId) {
+            event.preventDefault();
+
+            // Закрываем мобильное меню если оно открыто
+            closeMobileMenu();
+
+            const section = document.getElementById(sectionId);
+            if (section) {
+                const headerOffset = 100; // Отступ от хедера
+                const elementPosition = section.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Функции для работы с мобильным меню
+        function openMobileMenu() {
+            const mobileNav = document.getElementById('mobile-nav');
+            const header = document.querySelector('.header');
+
+            mobileNav.classList.add('show-mobile-nav');
+            document.body.style.overflow = 'hidden';
+            if (header) header.classList.add('header-hidden');
+        }
+
+        function closeMobileMenu() {
+            const mobileNav = document.getElementById('mobile-nav');
+            const header = document.querySelector('.header');
+
+            mobileNav.classList.remove('show-mobile-nav');
+            document.body.style.overflow = '';
+            if (header) header.classList.remove('header-hidden');
+        }
+
+        // Инициализация после загрузки DOM
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerMenu = document.getElementById('burger-menu');
+            const closeMenu = document.getElementById('close-menu');
+            const mobileNav = document.getElementById('mobile-nav');
+            const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+
+            // Открытие меню по клику на бургер
+            if (burgerMenu) {
+                burgerMenu.addEventListener('click', openMobileMenu);
+            }
+
+            // Закрытие меню по клику на крестик
+            if (closeMenu) {
+                closeMenu.addEventListener('click', closeMobileMenu);
+            }
+
+            // Закрытие меню по клику на элементы навигации
+            mobileNavItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    // Добавляем небольшую задержку для плавности
+                    setTimeout(closeMobileMenu, 100);
+                });
+            });
+
+            // Закрытие меню по клику на кнопку заявки в мобильном меню
+            const mobileButton = document.querySelector('.mobile-nav-button');
+            if (mobileButton) {
+                mobileButton.addEventListener('click', function () {
+                    setTimeout(closeMobileMenu, 100);
+                });
+            }
+
+            // Закрытие меню по клику вне области меню
+            if (mobileNav) {
+                mobileNav.addEventListener('click', function (e) {
+                    if (e.target === mobileNav) {
+                        closeMobileMenu();
+                    }
+                });
+            }
+
+            // Закрытие меню по нажатию Escape
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    closeMobileMenu();
+                }
+            });
+
+            // Sticky header
+            function handleStickyHeader() {
+                const header = document.querySelector('.header');
+                const scrollPosition = window.scrollY;
+
+                if (scrollPosition > 0) {
+                    header.classList.add('sticky');
+                } else {
+                    header.classList.remove('sticky');
+                }
+            }
+
+            window.addEventListener('scroll', handleStickyHeader);
+            handleStickyHeader(); // Проверяем при загрузке
+        });
+
+
+
+        // Zoom modal
+        function openModal(certificateId) {
+            const modal = document.getElementById('modal');
+            const modalContent = modal.querySelector('.modal-content');
+
+            // Устанавливаем background-image для модального окна
+            // Замените пути на ваши реальные изображения сертификатов
+            const certificateImages = {
+                1: 'images/cert1.jpg',
+                2: 'images/cert2.jpg',
+                3: 'images/cert3.jpg',
+                4: 'images/cert4.jpg',
+                5: 'images/cert5.jpg'
+            };
+
+            modalContent.style.backgroundImage = `url('${certificateImages[certificateId]}')`;
+
+            modal.classList.add('active');
+
+            // Блокируем прокрутку страницы
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(event) {
+            if (event && event.target !== event.currentTarget && !event.target.classList.contains('close')) {
+                return;
+            }
+
+            const modal = document.getElementById('modal');
+            modal.classList.remove('active');
+
+            // Восстанавливаем прокрутку страницы
+            document.body.style.overflow = 'auto';
+        }
+
+        // Закрытие по клавише Escape
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+
+
+
+
+        // header sticky 
+
+        // Функция для управления фиксированным хедером
+        function handleStickyHeader() {
+            const header = document.querySelector('.header');
+
+            // Определяем, насколько прокручена страница
+            const scrollPosition = window.scrollY;
+
+            // Если прокрутка больше 0px, добавляем класс sticky
+            if (scrollPosition > 0) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        }
+
+        // Добавляем обработчики событий
+        document.addEventListener('DOMContentLoaded', function () {
+            // Проверяем положение хедера при загрузке страницы
+            handleStickyHeader();
+
+            // Обновляем положение хедера при прокрутке
+            window.addEventListener('scroll', handleStickyHeader);
+        });
+
+        // Функция для определения активной секции при прокрутке
+        function setActiveNavItem() {
+            const sections = document.querySelectorAll('section[id]'); // Все секции с ID
+            const navItems = document.querySelectorAll('.nav-item');   // Все пункты навигации
+
+            // Получаем текущую позицию прокрутки с учетом отступа
+            const scrollPosition = window.scrollY + 50; // Добавляем небольшой отступ для лучшего определения
+
+            // Проходим по всем секциям и проверяем их позицию
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                // Проверяем, находится ли пользователь в этой секции
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    // Удаляем активный класс у всех пунктов навигации
+                    navItems.forEach(item => {
+                        item.classList.remove('active');
+                    });
+
+                    // Добавляем активный класс нужному пункту
+                    const activeNavItem = document.querySelector(`.nav-item[href="#${sectionId}"]`);
+                    if (activeNavItem) {
+                        activeNavItem.classList.add('active');
+                    }
+                }
+            });
+        }
+
+        // Добавляем обработчики событий
+        document.addEventListener('DOMContentLoaded', function () {
+            // Вызываем функцию при загрузке страницы
+            setActiveNavItem();
+
+            // Вызываем функцию при прокрутке страницы
+            window.addEventListener('scroll', setActiveNavItem);
+        });
+
+
+
+
+
+
+        // ссылки плавный переход
+        function scrollToSection(event, sectionId) {
+            event.preventDefault(); // Предотвращаем стандартный переход
+
+            const section = document.getElementById(sectionId);
+            if (!section) return; // Проверка на существование элемента
+
+            const headerOffset = 110; // Ваш желаемый отступ
+            const elementPosition = section.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+
+
+
+
+        document.getElementById('burger-menu').addEventListener('click', function () {
+            document.getElementById('mobile-nav').classList.add('show-mobile-nav');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function () {
+            document.getElementById('mobile-nav').classList.remove('show-mobile-nav');
+        });
+
+
+
+        // Функция для проверки, виден ли элемент в области просмотра
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.bottom >= 0 &&
+                rect.left <= (window.innerWidth || document.documentElement.clientWidth) &&
+                rect.right >= 0
+            );
+        }
+
+        // Функция для анимации чисел
+        function animateNumbers() {
+            const statsWrapper = document.querySelector('.stats__wrapper');
+
+            // Проверяем, виден ли контейнер со статистикой
+            if (isElementInViewport(statsWrapper) && !statsWrapper.classList.contains('animated')) {
+                // Отмечаем, что анимация запущена
+                statsWrapper.classList.add('animated');
+
+                // Находим все элементы с числами
+                const numberElements = statsWrapper.querySelectorAll('.h--2');
+
+                // Для каждого элемента с числом
+                numberElements.forEach(element => {
+                    // Получаем исходный текст (например, ">200")
+                    const originalText = element.textContent;
+                    // Извлекаем знак ">" и числовое значение
+                    const prefix = originalText.charAt(0); // Получаем первый символ (">")
+                    const targetValue = parseInt(originalText.substring(1)); // Получаем число после ">"
+
+                    // Создаем структуру для отображения анимации
+                    element.innerHTML = `${prefix}<span class="animated-number">0</span>`;
+                    const animatedElement = element.querySelector('.animated-number');
+
+                    // Анимируем число
+                    let current = 0;
+                    const increment = Math.max(1, Math.ceil(targetValue / 50)); // Минимум 1, иначе деление на 50 шагов
+                    const duration = 1500; // Общая продолжительность анимации в миллисекундах
+                    const stepTime = duration / (targetValue / increment);
+
+                    const counter = setInterval(() => {
+                        current += increment;
+                        if (current >= targetValue) {
+                            animatedElement.textContent = targetValue;
+                            clearInterval(counter);
+                        } else {
+                            animatedElement.textContent = current;
+                        }
+                    }, stepTime);
+                });
+
+                // Удаляем обработчик события, так как анимация уже была запущена
+                window.removeEventListener('scroll', animateNumbers);
+            }
+        }
+
+        // Добавляем CSS стили для анимации
+        document.head.insertAdjacentHTML('beforeend', `
+<style>
+    .h--2 {
+        position: relative;
+    }
+    .animated-number {
+        display: inline-block;
+        transition: opacity 0.3s;
+        font-size: 46px;
+        line-height: 46px;
+        font-weight: 500;
+    }
+</style>
+`);
+
+        // Добавляем обработчик события прокрутки страницы
+        window.addEventListener('scroll', animateNumbers);
+
+        // Проверяем при загрузке страницы, возможно элемент уже виден
+        document.addEventListener('DOMContentLoaded', animateNumbers);
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const steps = document.querySelectorAll('.step');
+
+            steps.forEach(step => {
+                const header = step.querySelector('.step-header');
+                const details = step.querySelector('.step-details');
+
+                header.addEventListener('click', () => {
+                    const isActive = step.classList.contains('active');
+
+                    // Закрываем все остальные (не текущий элемент)
+                    steps.forEach(s => {
+                        if (s !== step && s.classList.contains('active')) {
+                            const d = s.querySelector('.step-details');
+
+                            s.classList.remove('active'); // стрелка сразу поворачивается вниз
+                            d.style.maxHeight = d.scrollHeight + 'px';
+                            d.offsetHeight; // Форсируем reflow
+                            d.style.maxHeight = '0px';
+                            d.style.paddingTop = '0px';
+                            d.style.paddingBottom = '0px';
+
+                            setTimeout(() => {
+                                d.removeAttribute('style'); // очищаем стили
+                            }, 500);
+                        }
+                    });
+
+                    // Переключаем состояние текущего элемента
+                    if (isActive) {
+                        // Если активен - закрываем
+                        step.classList.remove('active');
+                        details.style.maxHeight = details.scrollHeight + 'px';
+                        details.offsetHeight; // Форсируем reflow
+                        details.style.maxHeight = '0px';
+                        details.style.paddingTop = '0px';
+                        details.style.paddingBottom = '0px';
+
+                        setTimeout(() => {
+                            details.removeAttribute('style');
+                        }, 500);
+                    } else {
+                        // Если не активен - открываем
+                        step.classList.add('active');
+                        const extraSpace = 40;
+                        details.style.maxHeight = (details.scrollHeight + extraSpace) + 'px';
+                        details.style.paddingTop = '0px';
+                        details.style.paddingBottom = '24px';
+                    }
+                });
+            });
+        });
+
+
+
+
+
+
+        //карты - ?
+
+        ymaps.ready(init);
+
+        function init() {
+            const myMap = new ymaps.Map("map", {
+                center: [55.690857, 52.311828],
+                zoom: 17,
+                controls: [] // <--- Убирает ВСЕ стандартные контролы
+            });
+
+
+
+            const myPlacemark = new ymaps.Placemark(
+                [55.690857, 52.311828],
+                {
+                    hintContent: "Бульвар Павла Корчагина, 2а (ГЭС, 10/34а), этаж 2, офис №201",
+                    balloonContent: "Бульвар Павла Корчагина, 2а (ГЭС, 10/34а), этаж 2, офис №201"
+                },
+                {
+                    preset: "islands#redDotIcon"
+                }
+            );
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('.service__more .button');
+            const hiddenCards = document.querySelectorAll('.service__card.hidden');
+            const arrowIcon = toggleButton.querySelector('.arrow--icon svg');
+            let expanded = false;
+
+            toggleButton.addEventListener('click', () => {
+                expanded = !expanded;
+
+                hiddenCards.forEach(card => {
+                    card.style.display = expanded ? 'flex' : 'none';
+                });
+
+                arrowIcon.style.transform = expanded ? 'rotate(-90deg)' : 'rotate(90deg)';
+                toggleButton.querySelector('.button-text').textContent = expanded ? 'Скрыть услуги' : 'Все услуги';
+            });
+
+            // Изначально скрываем полностью через style (не только через .hidden)
+            hiddenCards.forEach(card => {
+                card.style.display = 'none';
+            });
+        });
+
+
+
+
+    </script>
+
+
+
+    </script>
+</body>
+
+</html>
