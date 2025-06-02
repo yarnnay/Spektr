@@ -169,7 +169,13 @@ section {
 }
 
 .tags__wrapper .tag {
-    background: #569dff3d;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 16px;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+
+
 }
 
 /* 3.4 Icons */
@@ -398,6 +404,10 @@ section {
     flex-direction: column;
     justify-content: space-between;
     background: linear-gradient(135deg, #0760D9, #4390F9);
+    background-image: url(images/bg-dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 48px;
     border-radius: 24px;
     color: #FEFEFE;
@@ -517,6 +527,10 @@ section {
     color: #FEFEFE;
     min-height: 80vh;
     justify-content: space-between;
+    background-image: url(images/bg-dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .stats__top {
@@ -851,6 +865,10 @@ section {
     border-radius: 24px;
     min-height: 80vh;
     justify-content: space-between;
+    background-image: url(images/bg-light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .chief__content .h--2 {
@@ -868,10 +886,6 @@ section {
 }
 
 
-
-
-
-
 .request__content {
     background: white;
     padding: 48px;
@@ -879,6 +893,8 @@ section {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    
+    
 }
 
 .request__content .tags__wrapper {
@@ -887,8 +903,8 @@ section {
 }
 
 .request__content .tags__wrapper .tag {
-    background-color: transparent;
-    outline: 2px solid #8597b340;
+    border: 2px solid #8597b363;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
 }
 
 .request__info {
@@ -917,7 +933,9 @@ section {
     background-color: #f5f9ff;
     padding: 48px;
     border-radius: 24px;
+    font-family: 'Rubik', sans-serif;
 }
+
 
 
 .form__submit {
@@ -928,6 +946,7 @@ section {
     margin-top: 48px;
 }
 
+/*
 .form__submit .button {
     flex: 1;
     justify-content: space-between;
@@ -936,6 +955,8 @@ section {
 .form__submit .button svg {
     transform: rotate(0deg);
 }
+
+*/
 
 
 
@@ -949,7 +970,77 @@ section {
     outline: none;
     text-transform: uppercase;
     min-height: 60px;
+
+
+    border: 2px solid #8597b370;
+    font-size: 18px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
 }
+
+
+
+.form__item input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.form__item input.error {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+
+
+
+
+.form__submit .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex: 1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form__submit .button:hover {
+    background-color: #0056b3;
+}
+
+.form__submit .button:disabled {
+    background-color: #8597b370 !important;
+    cursor: not-allowed;
+}
+
+.form__submit .button:disabled:hover {
+    background-color: #6c757d;
+}
+
+.form__submit .button svg {
+    transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .documents__content {
@@ -967,27 +1058,24 @@ section {
 
 .certificates__wrapper {
     display: flex;
-    gap: 24px;
-    justify-content: center;
+    gap: 48px;
+    justify-content: space-between;
     flex-wrap: wrap;
-
 
 }
 
 .certificate__card {
     outline: 2px solid #8597b340;
-    max-width: 297px !important;
     min-height: 420px;
+    min-width: 260px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 18px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    flex: 0 0 calc((100% - 48px) / 3);
-    /* 3 карточки в ряд */
-    max-width: calc((100% - 48px) / 3);
     box-sizing: border-box;
+    flex: 1;
 }
 
 .certificate__card:hover {
